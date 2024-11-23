@@ -1,5 +1,3 @@
-Here’s a polished description for your GitHub repository:
-
 ---
 
 # PyEnvBuilder
@@ -64,7 +62,3 @@ Contributions are welcome! Please submit issues or pull requests to help improve
 
 ## License
 This project is licensed under the MIT License. See the `LICENSE` file for details.
-
----
-
-Let me know if you'd like further tweaks or if you have specific details you'd like included!
