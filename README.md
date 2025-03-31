@@ -99,6 +99,8 @@ pyenvbuilder/
 │       ├── cleanup.py            # Environment cleanup utilities
 │       ├── pre_install_check.py  # System requirement verification
 │       ├── cli.py               # Command-line interface
+│       ├── config.py            # Configuration management
+│       ├── logging_config.py    # Logging configuration
 │       └── tests/               # Test suite
 ├── requirements/
 │   ├── base.txt                # Core dependencies
@@ -111,15 +113,23 @@ pyenvbuilder/
 
 ### Test Coverage
 
-The project maintains high test coverage across all modules:
+The project maintains test coverage across all modules:
 
-- `__init__.py`: 94% coverage
-- `cleanup.py`: 89% coverage
-- `cli.py`: 98% coverage
-- `create_env.py`: 85% coverage
-- `pre_install_check.py`: 96% coverage
+- `__init__.py`: 32% coverage
+- `cleanup.py`: 20% coverage
+- `cli.py`: 35% coverage
+- `create_env.py`: 14% coverage
+- `pre_install_check.py`: 24% coverage
+- `config.py`: 42% coverage
+- `logging_config.py`: 78% coverage
 
-Total coverage: 95% across 619 statements with 42 test cases.
+Total coverage: 27% across 740 statements with 33 test cases.
+
+Note: We are actively working on improving test coverage. Current focus areas:
+- CLI interface testing
+- Environment creation validation
+- Cleanup functionality verification
+- Pre-installation checks
 
 ### Setting up Development Environment
 
@@ -170,10 +180,11 @@ If you encounter any issues or have questions:
 
 ## Future Plans
 
-- Add environment cleanup and reset functionality
-- Enhance logging and error handling
-- Build a GUI for easier interaction
-- Extend support for more advanced Python workflows in Xcode
+- Improve test coverage across all modules
+- Add comprehensive error handling for edge cases
+- Enhance logging with structured output
 - Add support for custom Python versions
 - Implement environment isolation options
 - Add dependency management features
+- Create a comprehensive documentation site
+- Add CI/CD pipeline for automated testing and deployment
