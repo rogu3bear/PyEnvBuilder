@@ -29,6 +29,10 @@ ENV/
 env.bak/
 venv.bak/
 .python-version
+.venv/
+.venv
+venv/
+env/
 
 # IDE
 .idea/
@@ -36,6 +40,11 @@ venv.bak/
 *.swp
 *.swo
 .DS_Store
+*.sublime-workspace
+*.sublime-project
+.project
+.pydevproject
+.settings/
 
 # Testing
 .coverage
@@ -51,11 +60,18 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 test_env/
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
 
 # Logs
 *.log
 logs/
 log/
+*.log.*
+log.*
+logs.*/
 
 # Project specific
 pyenvbuilder.log
@@ -65,9 +81,15 @@ requirements/*.txt
 !requirements/base.txt
 !requirements/dev.txt
 !requirements/test.txt
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
 
 # Docker
 .docker/
+docker-compose.override.yml
 
 # Distribution
 dist/
@@ -76,6 +98,10 @@ build/
 *.zip
 *.rar
 *.7z
+*.whl
+*.tar
+*.tar.bz2
+*.tar.xz
 
 # Temporary files
 *.tmp
@@ -83,11 +109,26 @@ build/
 *.bak
 *.swp
 *~
+*.tmp.*
+*.temp.*
+*.bak.*
+*.swp.*
+*~.*
 
 # mypy
 .mypy_cache/
 .dmypy.json
 dmypy.json
+.pyre/
 
 # Rope project settings
-.ropeproject 
+.ropeproject
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Local development
+local_settings.py
+instance/
+.webassets-cache 
