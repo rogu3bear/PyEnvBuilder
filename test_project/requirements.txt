@@ -1,0 +1,7 @@
+wheel
+setuptools
+pip-tools
+pytest
+black
+flake8
+mypy
